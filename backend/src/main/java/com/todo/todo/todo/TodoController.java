@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 @RequestMapping(path = "/api/v1/todo")
 public class TodoController {
-    @GetMapping("/")
+    @GetMapping
     public List<Todo> getTodos() {
         Person testPerson = new Person();
         Todo todo = new Todo(123L, "Todo 1", "Get groceries", LocalDate.now(), testPerson);
